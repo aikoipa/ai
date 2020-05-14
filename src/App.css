@@ -1,21 +1,29 @@
+/* noto-sans-kr-regular - korean_latin */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/noto-sans-kr-v12-korean_latin/noto-sans-kr-v12-korean_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'),
+       url('./assets/fonts/noto-sans-kr-v12-korean_latin/noto-sans-kr-v12-korean_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/noto-sans-kr-v12-korean_latin/noto-sans-kr-v12-korean_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/noto-sans-kr-v12-korean_latin/noto-sans-kr-v12-korean_latin-regular.woff') format('woff'), /* Modern Browsers */
+       /* url('./assets/fonts/noto-sans-kr-v12-korean_latin/noto-sans-kr-v12-korean_latin-regular.ttf') format('truetype'), Safari, Android, iOS */
+       url('./assets/fonts/noto-sans-kr-v12-korean_latin/noto-sans-kr-v12-korean_latin-regular.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +43,214 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.section1-bg {
+  /* The image used */
+  background-image: url("/images/top-image.png");
+
+  /* Full height */
+  height: 666px;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+}
+
+.section1-bg h1 {
+  font-size: 50px;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 600px)  {
+  .section1-bg h1 {
+    font-size: 30px;
+  }
+}
+
+.section1-bg .text-section {
+  padding-top: 200px; 
+  text-align: center;
+}
+
+.section1-bg .text-section a {
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000046, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000046, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section1-bg .text-section a:hover {
+  text-decoration: none;
+}
+
+
+.section2-bg {
+  padding-top: 50px;
+  background-color: #25AAA1;
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+
+.section3-bg {
+  padding-top: 50px;
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.section3-bg h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.section3-bg > p {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 30px;
+  font-size: 15pt;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px)  {
+  .section3-bg > p {
+    text-align: justify;
+  }
+}
+
+
+.section3-bg .row {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.poster {
+  width: 100%;
+  max-width: 1000px;
+  z-index: 2;
+}
+
+.round-bg-top {
+  background-color: #25AAA1;
+  width: 100%;
+  height: 100px;
+  border-radius: 100px;
+  position: absolute;
+  top: -50px;
+  z-index: 1;
+}
+
+.round-bg-bottom {
+  background-color: #25AAA1;
+  width: 100%;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -50px;
+  z-index: 1;
+}
+
+.single-guarantee {
+  box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  padding: 45px 40px;
+  transition: .3s linear;
+  transform: translateY(0);
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.guarantee-content {
+  width: 100%;
+}
+
+
+.section-green {
+  padding-top: 50px;
+  background: #06beb6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-green h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.section-green .course-table tbody tr td,
+.section-green .course-table tbody tr th {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.section-white {
+  padding-top: 50px;
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-white h2 {
+  color: #808080;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.section-white .course-table tbody tr td,
+.section-white .course-table tbody tr th {
+  color: #808080;
+  border: 1px solid #808080;
+}
+
+
+.course-table {
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid #fff;
+  border-style: dotted;
+}
+
+.course-table tbody tr td,
+.course-table tbody tr th {
+  padding: 10px;
+  border-style: dotted;
+  font-size: 15pt;
+}
+
+.course-table tbody tr th { 
+  width: 40%;
 }

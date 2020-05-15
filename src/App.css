@@ -45,7 +45,7 @@ body {
   }
 }
 
-.section1-bg {
+.section1 {
   /* The image used */
   background-image: url("/images/top-image.png");
 
@@ -57,11 +57,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 1;
-  position: relative;
 }
 
-.section1-bg h1 {
+.section1 h1 {
   font-size: 50px;
   color: #fff;
   line-height: 1.3;
@@ -72,17 +70,17 @@ body {
 }
 
 @media screen and (max-width: 600px)  {
-  .section1-bg h1 {
+  .section1 h1 {
     font-size: 30px;
   }
 }
 
-.section1-bg .text-section {
+.section1 .text-section {
   padding-top: 200px; 
   text-align: center;
 }
 
-.section1-bg .text-section a {
+.section1 .text-section a {
   font-size: 30px;
   color: #fff;
   line-height: 1.3;
@@ -95,21 +93,20 @@ body {
   background: linear-gradient(to right, #000046, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.section1-bg .text-section a:hover {
+.section1 .text-section a {
   text-decoration: none;
 }
 
 
-.section2-bg {
-  padding-top: 50px;
-  background-color: #25AAA1;
+.section2 {
+  background-color: #19A79D;
   width: 100%;
   position: relative;
-  padding-bottom: 50px;
 }
 
 
-.section3-bg {
+
+.section3 {
   padding-top: 50px;
   background-color: #fff;
   width: 100%;
@@ -117,12 +114,12 @@ body {
   padding-bottom: 50px;
 }
 
-.section3-bg h2 {
+.section3 h2 {
   font-weight: bold;
   font-size: 30px;
 }
 
-.section3-bg > p {
+.section3 > p {
   margin-top: 30px;
   margin-bottom: 50px;
   margin-left: 50px;
@@ -133,13 +130,13 @@ body {
 }
 
 @media screen and (max-width: 600px)  {
-  .section3-bg > p {
+  .section3 > p {
     text-align: justify;
   }
 }
 
 
-.section3-bg .row {
+.section3 .row {
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -150,7 +147,7 @@ body {
   z-index: 2;
 }
 
-.round-bg-top {
+.round-top {
   background-color: #25AAA1;
   width: 100%;
   height: 100px;
@@ -160,7 +157,7 @@ body {
   z-index: 1;
 }
 
-.round-bg-bottom {
+.round-bottom {
   background-color: #25AAA1;
   width: 100%;
   height: 100px;
@@ -191,8 +188,8 @@ body {
 .section-green {
   padding-top: 50px;
   background: #06beb6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: -webkit-linear-gradient(180deg, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(180deg, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   width: 100%;
   position: relative;
   padding-bottom: 50px;
@@ -253,4 +250,14 @@ body {
 
 .course-table tbody tr th { 
   width: 40%;
+}
+
+.layout-arrow-down {
+  width: 0; 
+  height: 0; 
+}
+
+
+:root {
+  --animation-duration: 2s;
 }

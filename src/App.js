@@ -17,7 +17,7 @@ function App() {
          <img src="/images/poster.png" alt="poster" className="poster"/>
         {/* <div className="round-bottom" /> */}
       </div>
-      <LayoutDownArrow color="#19A79D"/>
+      <LayoutDownArrow color="#25AAA1"/>
 
       <div className="section3">
         <h2 className="wow animate__animated animate__pulse">과정소개</h2>

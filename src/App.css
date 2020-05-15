@@ -47,7 +47,7 @@ body {
 
 .section1 {
   /* The image used */
-  background-image: url("/ai/images/top-image.png");
+  background-image: url("/images/top-image.png");
 
   /* Full height */
   height: 666px;

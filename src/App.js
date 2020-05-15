@@ -14,7 +14,7 @@ function App() {
 
       <div className="section2">
         {/* <div className="round-top" /> */}
-         <img src="/ai/images/poster.png" alt="poster" className="poster"/>
+         <img src="/images/poster.png" alt="poster" className="poster"/>
         {/* <div className="round-bottom" /> */}
       </div>
       <LayoutDownArrow color="#19A79D"/>

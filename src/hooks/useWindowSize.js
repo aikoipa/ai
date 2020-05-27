@@ -6,8 +6,8 @@ function useWindowSize() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   function getSize() {
     return {
-      width: isClient ? window.innerWidth : undefined,
-      height: isClient ? window.innerHeight : undefined
+      width: isClient ? window.innerWidth || window.screen.availWidth : undefined,
+      height: isClient ? window.innerHeight || window.screen.availHeight : undefined
     };
   }
 
@@ -19,6 +19,7 @@ function useWindowSize() {
     }
     
     function handleResize() {
+      console.log('resize', getSize());
       setWindowSize(getSize());
     }
 

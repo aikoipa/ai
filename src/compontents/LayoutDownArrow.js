@@ -10,16 +10,18 @@ function LayoutDownArrow(props) {
     setWidth(windowSize.width / 2);
   }, [windowSize])
 
-  return (
-    <div 
-      className="layout-arrow-down" 
-      style={{ 
-        borderLeft: `${width}px solid transparent`,
-        borderRight: `${width}px solid transparent`,
-        borderTop: `50px solid ${props.color}`,
-      }} 
-    />
-  );
+  return null;
+  
+  // return (
+  //   <div 
+  //     className="layout-arrow-down" 
+  //     style={{ 
+  //       // borderLeft: `${width}px solid transparent`,
+  //       // borderRight: `${width}px solid transparent`,
+  //       borderTop: `50px solid ${props.color}`,
+  //     }} 
+  //   />
+  // );
 }
 
 export default LayoutDownArrow;

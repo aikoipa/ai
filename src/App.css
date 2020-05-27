@@ -11,15 +11,27 @@
        /* url('./assets/fonts/noto-sans-kr-v12-korean_latin/noto-sans-kr-v12-korean_latin-regular.ttf') format('truetype'), Safari, Android, iOS */
        url('./assets/fonts/noto-sans-kr-v12-korean_latin/noto-sans-kr-v12-korean_latin-regular.svg#NotoSansKR') format('svg'); /* Legacy iOS */
 }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  padding: 0px;
 }
 
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 .App-header {
@@ -101,17 +113,18 @@ body {
 .section2 {
   background-color: #25AAA1;
   width: 100%;
+  min-height: 450px;
   position: relative;
 }
 
 
 
 .section3 {
-  padding-top: 50px;
+  padding-top: 30px;
   background-color: #fff;
   width: 100%;
+  min-height: 450px;
   position: relative;
-  padding-bottom: 50px;
 }
 
 .section3 h2 {
@@ -129,11 +142,7 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 600px)  {
-  .section3 > p {
-    text-align: justify;
-  }
-}
+
 
 
 .section3 .row {
@@ -186,13 +195,14 @@ body {
 
 
 .section-green {
-  padding-top: 50px;
+  padding-top: 30px;
   background: #06beb6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(180deg, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(180deg, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   width: 100%;
   position: relative;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -211,11 +221,11 @@ body {
 }
 
 .section-white {
-  padding-top: 50px;
   background-color: rgba(255, 255, 255, 1);
   width: 100%;
   position: relative;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -260,4 +270,28 @@ body {
 
 :root {
   --animation-duration: 2s;
+}
+
+.teachers {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.partners {
+  width: 80%;
+}
+
+@media screen and (max-width: 600px)  {
+  .teachers {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .partners {
+    width: 100%;
+  }
+}
+
+p.course-desc {
+  text-align: left;  
 }

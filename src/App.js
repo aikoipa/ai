@@ -22,17 +22,17 @@ function App() {
       <div className="section3">
         <h2 className="wow animate__animated animate__pulse">과정소개</h2>
 
-        <p className=" wow animate__animated animate__bounceInLeft">
-          본 과정은 인공지능 큐레이터 양성과정으로, 다양한 산업분야에서 각광 받고 있는 인공지능 기술을 응용하고 융합할 수 있는 인재를 양성합니다.<br />
-          6개월(960시간) 동안의 "Python의 기초부터, 최신 딥러닝 트렌드까지 양질의 이론 및 실습강의"가 제공되고,<br />
-          이와 같이 기업의 전문 개발자와 함께 프로젝트를 수행하여, 산업과 기업에서 원하는 핵심인재로 성장 할 수 있습니다.<br/>
+        <p className="course-desc wow animate__animated animate__bounceInLeft">
+          본 과정은 인공지능 큐레이터 양성과정으로, 다양한 산업분야에서 각광 받고 있는 인공지능 기술을 응용하고 융합할 수 있는 인재를 양성합니다.
+          6개월(960시간) 동안의 "Python의 기초부터, 최신 딥러닝 트렌드까지 양질의 이론 및 실습강의"가 제공되고,
+          이와 같이 기업의 전문 개발자와 함께 프로젝트를 수행하여, 산업과 기업에서 원하는 핵심인재로 성장 할 수 있습니다.
         </p>
         <div className="row">
           <div className="col-md-6">
               <div className="single-guarantee mb-30 wow animate__animated animate__fadeIn">
                   <div className="guarantee-content">
                       <h4>기초-심화</h4>
-                      <p>인공지능의 기초를 위한<br/>Python부터, 기계학습, 딥러닝, 미니프로젝트까지 양질 교육제공</p>
+                      <p>인공지능의 기초를 위한 Python부터, 기계학습<br/>딥러닝, 미니프로젝트까지 양질 교육제공</p>
                   </div>
               </div>
           </div>
@@ -56,7 +56,7 @@ function App() {
               <div className="single-guarantee mb-30 wow animate__animated animate__fadeIn">
                   <div className="guarantee-content">
                       <h4>실전형 프로젝트</h4>
-                      <p>AI기업에서 원하는 교육생이 원하는 실전형 프로그램 제공</p>
+                      <p>AI기업에서 원하는 교육생이 원하는 실전형 프로그램 제공<br/><br/></p>
                   </div>
               </div>
           </div>
@@ -66,7 +66,7 @@ function App() {
       <div className="section-green">
         <h2 className="wow animate__animated animate__pulse">I. 인공지능을 위한 Python</h2>
 
-        <table className="course-table wow animate__animated animate__bounceInLeft" align="center">
+        <table className="course-table" align="center">
           <tbody>
             <tr>
               <th rowSpan={4}>1. Python 기초</th><td>Python 개요</td>
@@ -96,7 +96,7 @@ function App() {
       <div className="section-white">
         <h2 className="wow animate__animated animate__pulse">II. Python 기반의 데이터 처리</h2>
 
-        <table className="course-table wow animate__animated animate__bounceInRight" align="center">
+        <table className="course-table" align="center">
             <tbody>
             <tr>
               <th rowSpan={2}>1. Numeric<br />Programming</th><td>Numpy</td>
@@ -120,7 +120,7 @@ function App() {
       <div className="section-green">
         <h2 className="wow animate__animated animate__pulse">III. 인공지능과 기계학습</h2>
 
-        <table className="course-table wow animate__animated animate__bounceInLeft" align="center">
+        <table className="course-table" align="center">
           <tbody>
           <tr>
             <th>1. 전통적인 인공지능기법</th><td></td>
@@ -163,7 +163,7 @@ function App() {
       <div className="section-white">
         <h2 className="wow animate__animated animate__pulse">IV. 딥러닝(Deep Learning)</h2>
 
-        <table className="course-table wow animate__animated animate__bounceInRight" align="center">
+        <table className="course-table" align="center">
           <tbody>
           <tr>
             <th rowSpan={3}>
@@ -210,7 +210,12 @@ function App() {
           </tbody>
         </table>
       </div>
-      <LayoutDownArrow color="#fff"/>
+      <div className="section-white">
+        <h2 className="wow animate__animated animate__pulse">국 내·외 유명기업<br/>현직 특강강사</h2>
+        <img src="/images/teachers.png" alt="teachers" className="teachers" />
+        <h2 className="wow animate__animated animate__pulse">AI 관련 프로젝트<br/>협업 기업</h2>
+        <img src="/images/partners.png" alt="partners" className="partners" />
+      </div>
       <div className="section1">
         <div className="text-section">
           <h1>

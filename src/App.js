@@ -210,9 +210,11 @@ function App() {
           </tbody>
         </table>
       </div>
-      <div className="section-white">
+      <div className="section-white" style={{ borderTop: '1px solid #A29FA0'}}>
         <h2 className="wow animate__animated animate__pulse">국 내·외 유명기업<br/>현직 특강강사</h2>
         <img src="/images/teachers.png" alt="teachers" className="teachers" />
+      </div>
+      <div className="section-white" style={{ borderTop: '1px solid #A29FA0'}}>
         <h2 className="wow animate__animated animate__pulse">AI 관련 프로젝트<br/>협업 기업</h2>
         <img src="/images/partners.png" alt="partners" className="partners" />
       </div>

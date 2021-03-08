@@ -1,33 +1,23 @@
 import { useEffect, useState } from 'react';
 
-function useWindowSize() {
-  const isClient = typeof window === 'object';
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  function getSize() {
-    return {
-      width: isClient ? window.innerWidth || window.screen.availWidth : undefined,
-      height: isClient ? window.innerHeight || window.screen.availHeight : undefined
-    };
-  }
-
-  const [windowSize, setWindowSize] = useState(getSize);
+const useWindowSize = () => {
+  const [width, setWidth] = useState(window.screen.width || window.innerWidth);
+  // Add a second state variable "height" and default it to the current window height
+  const [height, setHeight] = useState(window.innerHeight);
 
   useEffect(() => {
-    if (!isClient) {
-      return false;
-    }
-    
-    function handleResize() {
-      console.log('resize', getSize());
-      setWindowSize(getSize());
+    const handleWindowResize = () => {
+      setWidth(window.screen.width || window.innerWidth);
+      // Set the height in state as well as the width
+      setHeight(window.innerHeight);
     }
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, [getSize, isClient]); // Empty array ensures that effect is only run on mount and unmount
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
 
-  return windowSize;
+  // Return both the height and width
+  return { width, height };
 }
 
 export default useWindowSize;

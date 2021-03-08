@@ -217,7 +217,7 @@ function App() {
             프로젝트 기반 문제 해결형<br/>
             인공지능 큐레이터 양성 과정
           </h1>
-          <a href="https://forms.gle/cjnpLkB6wCsocN689">
+          <a href="https://forms.gle/rFHiFZX8LxMECpsy6">
             접수신청 바로가기
           </a>
         </div>

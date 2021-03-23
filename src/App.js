@@ -14,8 +14,15 @@ function App() {
 
       <div className="section2">
         {/* <div className="round-top" /> */}
-         <img src="/images/poster2.png" alt="poster" className="poster"/>
+         <img src="/images/poster_20210323.jpeg" alt="poster" className="poster"/>
         {/* <div className="round-bottom" /> */}
+      </div>
+      <div className="section7">
+        <div className="text-section">
+          <a href="https://forms.gle/rFHiFZX8LxMECpsy6">
+            접수신청 바로가기
+          </a>
+        </div>
       </div>
       <LayoutDownArrow color="#25AAA1"/>
 

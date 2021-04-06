@@ -59,7 +59,7 @@ body {
 
 .section7 {
   /* The image used */
-  background-color: #2AA99C;
+  background-color:  #284095;
   fill-opacity: 0.2;
 
   /* Full height */
@@ -91,7 +91,7 @@ body {
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  background: #000046;  /* fallback for old browsers */
+  background: #326DB3;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #000046, #000046);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #000046, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -144,18 +144,19 @@ body {
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  background: #000046;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #000046, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #000046, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #284095;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3171B6, #284095);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3171B6, #284095); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .section1 .text-section a {
   text-decoration: none;
 }
 
-
 .section2 {
-  background-color: #2AA99C;
+  background-color: #284095;
+  background: -webkit-linear-gradient(180deg, #3171B6, #284095);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(180deg, #3171B6, #284095); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   width: 100%;
   min-height: 450px;
   position: relative;
@@ -201,7 +202,7 @@ body {
 }
 
 .round-top {
-  background-color: #25AAA1;
+  background-color: #275CA7;
   width: 100%;
   height: 100px;
   border-radius: 100px;
@@ -211,7 +212,7 @@ body {
 }
 
 .round-bottom {
-  background-color: #25AAA1;
+  background-color: #275CA7;
   width: 100%;
   height: 100px;
   border-radius: 50px;
@@ -240,9 +241,9 @@ body {
 
 .section-green {
   padding-top: 30px;
-  background: #06beb6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(180deg, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(180deg, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background:#275CA7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(180deg, #3171B6, #284095);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(180deg, #3171B6, #284095); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   width: 100%;
   position: relative;
   padding-top: 30px;

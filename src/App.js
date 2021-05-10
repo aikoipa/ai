@@ -14,7 +14,7 @@ function App() {
 
       <div className="section2">
         {/* <div className="round-top" /> */}
-         <img src="/images/poster_20210501.jpg" alt="poster" className="poster"/>
+         <img src="/images/poster_20210511.jpg" alt="poster" className="poster"/>
         {/* <div className="round-bottom" /> */}
       </div>
       <div className="section7">
